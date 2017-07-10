@@ -12,8 +12,7 @@ export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .feature(PLATFORM.moduleName('xeditable/index'));
-    // .plugin(PLATFORM.moduleName('aurelia-xeditable'));
+    .feature(PLATFORM.moduleName('contacts/index'));
 
   // Uncomment the line below to enable animation.
   // aurelia.use.plugin(PLATFORM.moduleName('aurelia-animator-css'));

@@ -1,4 +1,4 @@
-# aurelia-xeditable-demo
+# aurelia-socket.io-client-demo
 
 The simplest example of using [Aurelia](http://www.aurelia.io/) and [socket.io-client](https://github.com/socketio/socket.io-client).
 
@@ -134,3 +134,30 @@ To run all the unit test suites and the E2E tests, you may simply run:
 ```shell
 npm start -- test.all
 ```
+
+## Backend
+
+### Install [pywebsocket](https://github.com/google/pywebsocket)
+Before you test above client program, you need a server which supports WebSocket. Download/Clone mod_pywebsocket-x.x.x.tar.gz from [pywebsocket](https://github.com/google/pywebsocket) which aims to provide a Web Socket extension for Apache HTTP Server and install it following these steps.
+
+1. Go inside pywebsocket-x.x.x/src/ directory.
+
+2. Build and install the package
+```shell
+python setup.py build
+sudo python setup.py install
+```
+
+Then read document by:
+```shell
+pydoc mod_pywebsocket
+```
+
+This will install it into your python environment.
+
+Start the Server
+Go to the pywebsocket-x.x.x/src/mod_pywebsocket folder and run the following command:
+```shell
+sudo python standalone.py -p 9998 -w ../example/
+```
+
