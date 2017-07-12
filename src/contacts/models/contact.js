@@ -1,9 +1,9 @@
-import {ValidationRules} from 'aurelia-validation';
+import { ValidationRules } from 'aurelia-validation';
 
-import {PhoneNumber} from './phone-number';
-import {EmailAddress} from './email-address';
-import {Address} from './address';
-import {SocialProfile} from './social-profile';
+import { PhoneNumber } from './phone-number';
+import { EmailAddress } from './email-address';
+import { Address } from './address';
+import { SocialProfile } from './social-profile';
 
 export class Contact {
 

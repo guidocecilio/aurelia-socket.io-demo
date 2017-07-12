@@ -1,0 +1,36 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Guido Cecilio",
+      "lastName": "Garcia Bernal",
+      "company": "Propylon LTD",
+      "birthday": "21/09/1977",
+      "phoneNumbers": [
+        "0860878300"
+      ],
+      "emailAddresses": [
+        "guidocecilio@gmail.com"
+      ],
+      "addresses": [
+        "none"
+      ],
+      "socialProfiles": [
+        "https://www.linkedin.com/in/guidocecilio/"
+      ],
+      "note": ""
+    },
+    {
+      "firstName": "Guido",
+      "lastName": "Garcia",
+      "company": "Prop",
+      "birthday": "21 Sep 1977",
+      "phoneNumbers": [],
+      "emailAddresses": [],
+      "addresses": [],
+      "socialProfiles": [],
+      "note": "This a note",
+      "id": 2
+    }
+  ]
+}

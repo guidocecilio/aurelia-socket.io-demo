@@ -12,6 +12,8 @@ export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
+    .feature(PLATFORM.moduleName('validation/index'))
+    .feature(PLATFORM.moduleName('resources/index'))
     .feature(PLATFORM.moduleName('contacts/index'));
 
   // Uncomment the line below to enable animation.

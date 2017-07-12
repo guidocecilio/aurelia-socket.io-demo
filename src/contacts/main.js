@@ -1,5 +1,3 @@
-import { inject } from 'aurelia-framework';
-
 export class Contacts {
 
   configureRouter(config) {
@@ -7,17 +5,30 @@ export class Contacts {
       {
         route: '',
         name: 'contacts',
-        moduleId: './components/list',
+        moduleId: PLATFORM.moduleName('./components/list'),
         title: 'Contacts'
       },
-      { route: 'new', name: 'contact-creation',
-        moduleId: './components/creation', title: 'New contact' },
-      { route: ':id', name: 'contact-details',
-        moduleId: './components/details' },
-      { route: ':id/edit', name: 'contact-edition',
-        moduleId: './components/edition' },
-      { route: ':id/photo', name: 'contact-photo',
-        moduleId: './components/photo' }
+      {
+        route: 'new',
+        name: 'contact-creation',
+        moduleId: PLATFORM.moduleName('./components/creation'),
+        title: 'New contact'
+      },
+      {
+        route: ':id',
+        name: 'contact-details',
+        moduleId: PLATFORM.moduleName('./components/details')
+      },
+      {
+        route: ':id/edit',
+        name: 'contact-edition',
+        moduleId: PLATFORM.moduleName('./components/edition')
+      },
+      {
+        route: ':id/photo',
+        name: 'contact-photo',
+        moduleId: PLATFORM.moduleName('./components/photo')
+      }
     ]);
   }
 }

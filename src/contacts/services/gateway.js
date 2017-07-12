@@ -14,15 +14,19 @@ export class ContactGateway {
   }
 
   create(contact) {
-    return this.httpClient.fetch('contacts', { method: 'POST', body: json(contact) });
+    return this.httpClient.fetch('contacts', {
+      method: 'POST', body: json(contact)
+    });
   }
 
   update(id, contact) {
-    return this.httpClient.fetch(`contacts/${id}`, { method: 'PUT', body: json(contact) });
+    return this.httpClient.fetch(`contacts/${id}`, {
+      method: 'PUT', body: json(contact)
+    });
   }
 
   updatePhoto(id, file) {
-    return this.httpClient.fetch(`contacts/${id}/photo`, { 
+    return this.httpClient.fetch(`contacts/${id}/photo`, {
       method: 'PUT',
       headers: { 'Content-Type': file.type },
       body: file
@@ -30,6 +34,8 @@ export class ContactGateway {
   }
 
   delete(id) {
-    return this.httpClient.fetch(`contacts/${id}`, { method: 'DELETE' });
+    return this.httpClient.fetch(`contacts/${id}`, {
+      method: 'DELETE'
+    });
   }
 }
